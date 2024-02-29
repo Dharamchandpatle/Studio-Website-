@@ -1,0 +1,834 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚀Welcome To My Photo Studio Website 🚀</title>
+    
+    <!-- css link  -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- --- Animation Cdn link ----  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- link icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+<body class=" font-poppins ">
+
+  <!-- home Section  -->
+<section class="Home-section bg-center bg-no-repeat bg-fixed bg-[url('https://max-themes.net/demos/ztudiox/main/ztudiox/upload/slider-2-1.jpg')] bg-gray-700 bg-blend-normal	" >
+       
+    
+        <div class="max-w-6xl px-4 mx-auto" x-data="{open:false}" >
+            <nav class="flex items-center justify-between py-4"> 
+                <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+               <img src="https://max-themes.net/demos/ztudiox/main/ztudiox/upload/logo-1.png" alt="">
+              </a> 
+              <ul class="hidden lg:w-auto lg:space-x-12 lg:items-center lg:flex ">
+                    <li><a href="" class="text-lg text-[var(--font-color)] dark:text-[var(--btn-bg-color)] hover:text-[var(--btn-bg-color)] dark:hover:text-[var(--btn-bg-color)]">Home</a>
+                    </li>
+                    <li><a href="" class="text-lg text-[var(--font-color)] dark:text-[var(--font-color)] hover:text-[var(--btn-bg-color)] dark:hover:text-[var(--btn-bg-color)]">About us</a>
+                    </li>
+                    <li><a href="" class="text-lg text-[var(--font-color)] dark:text-[var(--font-color)] hover:text-[var(--btn-bg-color)] dark:hover:text-[var(--btn-bg-color)]">Features</a>
+                    </li>
+                    <li><a href="" class="text-lg text-[var(--font-color)] dark:text-[var(--font-color)] hover:text-[var(--btn-bg-color)] dark:hover:text-[var(--btn-bg-color)]">Blog </a>
+                    </li>
+                    <li><a href="" class="text-lg text-[var(--font-color)] dark:text-[var(--font-color)] hover:text-[var(--btn-bg-color)] dark:hover:text-[var(--btn-bg-color)]">Testimonials</a>
+                    </li>
+                </ul>
+                <div class="lg:hidden">
+                    <button
+                        class="flex items-center px-3 py-2 text-blue-200 border border-blue-200 rounded dark:text-gray-400 hover:text-blue-300 hover:border-blue-300 lg:hidden"
+                        @click="open =true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="hidden lg:flex">
+                    <a href="" class="mr-4 text-[var(--font-color)] hover:text-[var(--btn-bg-color)]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                            class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                        </svg>
+                    </a>
+                    <a href="" class="mr-4 text-[var(--font-color)] hover:text-[var(--btn-bg-color)]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                            class="bi bi-whatsapp" viewBox="0 0 16 16">
+                            <path
+                                d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                        </svg>
+                    </a>
+                    <a href="" class="mr-4 text-[var(--font-color)] hover:text-[var(--btn-bg-color)]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                            class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                        </svg>
+                    </a>
+                </div>
+            </nav>
+            <!-- Mobile Sidebar -->
+            <div class="fixed inset-0 w-full bg-gray-900 opacity-25 dark:bg-gray-400 lg:hidden"
+                :class="{'translate-x-0 ease-in-opacity-100' :open===true, '-translate-x-full ease-out opacity-0' : open===false}">
+            </div>
+            <div class="absolute inset-0 z-10 h-screen p-3 text-gray-700 duration-500 transform shadow-md dark:bg-gray-800 bg-blue-50 w-80 lg:hidden lg:transform-none lg:relative"
+                :class="{'translate-x-0 ease-in-opacity-100' :open===true, '-translate-x-full ease-out opacity-0' : open===false}">
+                <div class="flex justify-between px-5 py-2">
+                    <a class="text-2xl font-bold dark:text-gray-300" href="#">Logo</a>
+                    <button class="rounded-md hover:text-blue-300 lg:hidden dark:text-gray-400" @click="open=false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-x-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                            <path
+                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </button>
+                </div>
+                <ul class="px-5 text-left mt-7">
+                    <li class="pb-3">
+                        <a href="" class="text-sm text-gray-700 hover:text-blue-400 dark:text-gray-100">Home</a>
+                    </li>
+                    <li class="pb-3">
+                        <a href="" class="text-sm text-gray-700 hover:text-blue-400 dark:text-gray-400">About us</a>
+                    </li>
+                    <li class="pb-3">
+                        <a href="" class="text-sm text-gray-700 hover:text-blue-400 dark:text-gray-400">Features</a>
+                    </li>
+                    <li class="pb-3">
+                        <a href="" class="text-sm text-gray-700 hover:text-blue-400 dark:text-gray-400">Blog </a>
+                    </li>
+                    <li class="pb-3">
+                        <a href="" class="text-sm text-gray-700 hover:text-blue-400 dark:text-gray-400">Testimonials</a>
+                    </li>
+                </ul>
+                <div class="border-t border-green-400 dark:border-gray-400 my-7"></div>
+                <div class="flex items-center px-5 lg:hidden">
+                    <a href="" class="mr-4 text-green-800 dark:text-gray-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                            class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                        </svg>
+                    </a>
+                    <a href="" class="mr-4 text-green-800 dark:text-gray-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                            class="bi bi-whatsapp" viewBox="0 0 16 16">
+                            <path
+                                d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                        </svg>
+                    </a>
+                    <a href="" class="mr-4 text-green-800 dark:text-gray-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                            class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    
+
+
+    <div class="px-4 mx-auto max-w-screen-xl py-24 lg:py-56"  data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000" >
+        <h2 class=" text-4xl text-[var(--btn-bg-color)] relative" >PROFESSIONAL STUDIO IN </h2> <br>
+        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-7xl lg:text-9xl mb-[-1.5rem]">LONDON . </h1>
+        <div class="h-[1rem] w-[45rem]  bg-[var(--btn-bg-color)]"  data-aos="fade-right" data-aos-delay="100" data-aos-duration="500"  >
+            <!-- <span class="h-24 w-3 bg-[var(--btn-bg-color)]"></span> -->
+        </div><br>
+        <p class="mb-8 text-lg font-semibold  text-gray-300 lg:text-xl sm:pr-16 lg:pr-48">Founded in 2008 by professional photographer, John Smith. We product visual content full-service creative to post production. Ultimately our mission is to help people to see beauty in themselves.</p>
+        <div class="flex flex-col space-y-4 sm:flex-row  sm:space-y-0">
+            <a href="#" class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium  text-white  hover:text-[var(--black-color)] rounded-lg border-b-4 border-[var(--btn-bg-color)] hover:bg-[var(--btn-bg-color)] focus:ring-4 focus:ring-gray-400">
+                Learn more
+                <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180 text-[var(--btn-bg-color)]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                </svg>
+            </a>  
+        </div>
+    </div>
+
+
+
+ </div>
+</section>
+
+<!-- Second section 2  -->
+
+<section class="flex gap-[0.3rem] max-w-7xl px-4 mx-auto py-[5rem] bg-[var(--font-color)]">
+    <div class=" h-[100%] w-[100%] text-lg font-bold p-3  border-b-4  border-[var(--btn-bg-color)] mr-4"  data-aos="fade-up" data-aos-delay="100" data-aos-duration="500" >
+        <p class=" ">
+            FOUNDED IN 2008 BY PROFESSIONAL PHOTOGRAPHER, JOHN SMITH. WE PRODUCT VISUAL CONTENT SERVICE CREATIVE TO POST PRODUCTION. <br>
+         
+                <i class="fa-brands fa-facebook p-3 text-xl"></i>
+                <i class="fa-brands fa-linkedin p-3 text-xl"></i>
+                <i class="fa-brands fa-google p-3 text-xl"></i>
+                <i class="fa-solid fa-phone p-3 text-xl"></i>
+                <i class="fa-brands fa-instagram p-3 text-xl"></i>
+                <i class="fa-brands fa-twitter p-3 text-xl"></i>
+        
+        </p>
+       
+    </div>
+    <div class=" h-[100%] w-[100%] text-[var(--para-color)]  text-[1.1rem] tracking-tight px-5"  data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" >Far Far Away, Behind The Word Mountains, Far From The Countries Vokalia And Consonantia, There Live The Blind Texts. Separated They Live In Bookmarksgrove <span class="font-bold">Right At The Coast Of The Semantics</span>, A Large Language Ocean. A Small River Named Duden Flows By Their Place And Supplies It With The Necessary Regelialia. It Is A Paradisematic Country, In Which Roasted Parts Of Sentences Fly Into Your Mouthes It With The Necessary Regelialia. It Is A Paradisematic Country, In Which Roasted Parts</div>
+    <div class=" h-[100%] w-[100%] text-[var(--para-color)] px-5 text-[1.1rem] tracking-tight px-5"  data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000" >Lorem Ipsum Decided To Leave For The Far World Of Grammar. The Big Oxmox Advised Her Not To Do So, Because There Were Thousands Of Bad Commas, Wild Question Marks And Devious Semikoli, But The Little Blind Text Didn’t Listen. She Packed Her Seven Versalia, Put Her Initial Into The Belt And Made.
+<br><br>
+       <span class="text-[var(--black-color)] font-semibold border-b-4 border-[var(--btn-bg-color)]"> READ MORE</span>
+        </div>
+</section>
+
+
+<!-- Second section 3  -->
+
+<section class=" section-3 h-full w-full  " style="
+    background-image: url(https://m.media-amazon.com/images/S/abs-image-upload-na/0/AmazonStores/ATVPDKIKX0DER/02e1218c486861bb52a9cbc40dc43b8c.w2000.h1256._CR372%2C0%2C1256%2C1256_SX750_SY750_.jpg);
+">
+<div class=""  data-aos="fade-right" data-aos-delay="100" data-aos-duration="2000" >
+    <div class="  pt-[8rem]  px-[6rem] mx-auto ">
+              <div
+                  class="absolute hidden md:block   text-[120px] text-[var(--font-color)] font-bold opacity-35">
+                  PHOTO SHOOT
+              </div>
+              <h1 class=" pt-[3.5rem] relative"> <span class="text-6xl  font-bold ">PHOTOSHOOT SERVICES </span><br> <span class="text-xl font-semibold ">MODELING & PERSONAL SHOOTINGS</span></h1>
+    </div>
+    <div class="flex px-[6rem] mx-auto pt-12">
+        <img src="https://max-themes.net/demos/ztudiox/main/ztudiox/upload/about-icon-1.png" class="h-[7%] w-[7%]" alt="">
+        <p class="w-[40%] p-6 font-bold">FAR FAR AWAY, BEHIND THE WORD MOUNTAINS, FAR FROM THE COUNTRIES VOKALIA AND CONSONANTIA, THERE LIVE THE BLIND TEXTS. SEPARATED THEY LIVE IN BOOKMARKSGROVE RIGHT AT THE COAST OF THE SEMANTICS, A LARGE LANGUAGE OCEAN. A SMALL RIVER NAMED DUDEN FLOWS BY THEIR PLACE AND SUPPLIES IT WITH THE NECESSARY REGELIALIA. IT IS A PARADISEMATIC COUNTRY, IN WHICH ROASTED PARTS OF SENTENCES .</p>
+
+    </div>
+    <div class=" pl-[13rem]">
+     <a href="#" class="inline-flex justify-center hover:text-gray-900 items-center font-bold  py-3 px-4 sm:ms-4 text-xl  font-medium  text-white  hover:text-[var(--black-color)] rounded-lg border-b-4 border-[var(--font-color)] hover:bg-[var(--btn-bg-color)] focus:ring-4 focus:ring-gray-400">
+                Learn more
+                <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180 text-[var(--font-color)]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                </svg>
+            </a>  
+        </div>
+    </div>
+</section>
+
+<!-- Third Section  -->
+
+<section class="section-4 ">
+<div class=""  data-aos="fade-left" data-aos-delay="100" data-aos-duration="2000" >
+    <div class="  pt-[8rem]  px-[6rem] mx-auto ">
+        <div
+            class="absolute hidden md:block   text-[120px] text-[var(--font-color)] font-bold opacity-35">
+            PRODUCTION 
+        </div>
+        <h1 class=" pt-[3.5rem] relative text-[var(--font-color)]"> <span class="text-6xl  font-bold ">PRODUCTION SERVICES </span><br> <span class="text-xl font-semibold ">ADVERTISE. FILIMING. YOU NAME IT
+        </span></h1>
+    </div>
+    <div class="flex px-[6rem] mx-auto pt-12">
+        <img src="https://max-themes.net/demos/ztudiox/main/ztudiox/upload/hp-service-icon-2.png" class="h-[7%] w-[7%]   text-[var(--font-color)] " alt="">
+        <p class="w-[40%] p-6 font-bold  text-[var(--font-color)] ">FAR FAR AWAY, BEHIND THE WORD MOUNTAINS, FAR FROM THE COUNTRIES VOKALIA AND CONSONANTIA, THERE LIVE THE BLIND TEXTS. SEPARATED THEY LIVE IN BOOKMARKSGROVE RIGHT AT THE COAST OF THE SEMANTICS, A LARGE LANGUAGE OCEAN. A SMALL RIVER NAMED DUDEN FLOWS BY THEIR PLACE AND SUPPLIES IT WITH THE NECESSARY REGELIALIA. IT IS A PARADISEMATIC COUNTRY, IN WHICH ROASTED PARTS OF SENTENCES .</p>
+
+    </div>
+    <div class=" pl-[13rem]">
+     <a href="#" class="inline-flex justify-center  text-[var(--font-color)]  hover:text-gray-900 items-center font-bold  py-3 px-4 sm:ms-4 text-xl  font-medium  text-white  hover:text-[var(--black-color)] rounded-lg border-b-4 border-[var(--btn-bg-color)] hover:bg-[var(--btn-bg-color)] focus:ring-4 focus:ring-gray-400">
+                Learn more
+                <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180 text-[var(--font-color)]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                </svg>
+            </a>  
+        </div>
+</div>
+</section>
+
+
+<!-- Forth Section  -->
+
+
+<section class="section-5 py-[5rem] ">
+    <div class=" "  data-aos="fade-right" data-aos-delay="100" data-aos-duration="2000" >
+        <div class="  pt-[8rem] px-[6rem] mx-auto ">
+            <div
+                class="absolute hidden md:block   text-[120px] text-[var(--font-color)] font-bold opacity-35">
+                PRODUCTION 
+            </div>
+            <h1 class=" pt-[3.5rem] relative text-[var(--black-color)]"> <span class="text-6xl  font-bold ">POST PRODUCTION</span><br> <span class="text-xl font-semibold ">PRODUCTS. WATCHES. BAGS
+            </span></h1>
+        </div>
+        <div class="flex px-[6rem] mx-auto pt-12">
+            <img src="https://max-themes.net/demos/ztudiox/main/ztudiox/upload/hp-service-icon-3.png" class="h-[7%] w-[7%]   text-[var(--black-color)] " alt="">
+            <p class="w-[40%] p-6 font-bold  text-[var(--black-color)] ">FAR FAR AWAY, BEHIND THE WORD MOUNTAINS, FAR FROM THE COUNTRIES VOKALIA AND CONSONANTIA, THERE LIVE THE BLIND TEXTS. SEPARATED THEY LIVE IN BOOKMARKSGROVE RIGHT AT THE COAST OF THE SEMANTICS, A LARGE LANGUAGE OCEAN. A SMALL RIVER NAMED DUDEN FLOWS BY THEIR PLACE AND SUPPLIES IT WITH THE NECESSARY REGELIALIA. IT IS A PARADISEMATIC COUNTRY, IN WHICH ROASTED PARTS OF SENTENCES .</p>
+    
+        </div>
+        <div class=" pl-[13rem]">
+         <a href="#" class="inline-flex justify-center  text-[var(--black-color)]  hover:text-gray-900 items-center font-bold  py-3 px-4 sm:ms-4 text-xl  font-medium  text-white  hover:text-[var(--black-color)] rounded-lg border-b-4 border-[var(--black-color)] hover:bg-[var(--btn-bg-color)] focus:ring-4 focus:ring-gray-400">
+                    Learn more
+                    <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180 text-[var(--font-color)]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                    </svg>
+                </a>  
+            </div>
+    </div>
+    </section>
+    
+ <!-- Studio's Owner  Section     -->
+
+ <section class="flex items-center py-16 bg-[var(--bg-color)] dark:bg-[var(--bg-color)] font-poppins">
+  <div class="p-4 mx-auto max-w-7xl" >
+    <div class="mb-10 md:mb-16"  data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" >
+      <h1 class="text-center text-2xl font-serif text-gray-800 md:mb-6 lg:text-xl">Meet Our Camera Studio Owner's </h1>
+      <h2 class="mb-4 text-center text-2xl font-serif text-gray-800 md:mb-6 lg:text-5xl">Our Expert  Camera Studio Owner's </h2>
+
+    </div>
+
+      <div class="mx-auto mb-16 border-b border-red-700 w-44 dark:border-gray-400"></div>
+      <div class="flex flex-wrap -m-1 md:-m-2">
+          <div class="w-full px-4 sm:w-1/3">
+              <div class="mb-8 ">
+                  <a href="#">
+                      <div class="relative mb-5 overflow-hidden">
+                          <img class="object-cover w-full h-[250px] lg:h-[450px] transition duration-500   group-hover:origin-center hover:scale-105 "
+                              src="https://images.unsplash.com/photo-1509145844239-0d160c78a06a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNhbWVyYSUyMG1hbnxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                              
+                      </div>
+                      
+                  </a>
+              </div>
+              <div class="mb-8">
+                  <a href="#">
+                      <div class="relative mb-5 overflow-hidden">
+                          <img class="object-cover w-full h-[250px] transition duration-500  group-hover:origin-center hover:scale-105"
+                              src="https://images.unsplash.com/photo-1622750657128-8d1db9f1ba06?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2FtZXJhJTIwbWFufGVufDB8fDB8fHww" alt="">
+                      </div>
+                      
+                  </a>
+              </div>
+          </div>
+          <div class="w-full px-4 sm:w-1/3 ">
+              <div class="mb-8 ">
+                  <a href="#">
+                      <div class="relative mb-5 overflow-hidden">
+                          <img class="object-cover w-full h-[250px] transition duration-500  group-hover:origin-center hover:scale-105"
+                              src="https://plus.unsplash.com/premium_photo-1682146739433-5926577acb7a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                      </div>
+                      
+                  </a>
+              </div>
+              <div class="mb-8 ">
+                  <a href="#">
+                      <div class="relative mb-5 overflow-hidden">
+                          <img class="object-cover w-full h-[250px] lg:h-[450px]  transition duration-500  group-hover:origin-center hover:scale-105"
+                              src="https://media.istockphoto.com/id/1463695044/photo/young-indian-man-holding-camera-in-hand-and-giving-expression-at-park.webp?b=1&s=170667a&w=0&k=20&c=FhWfmEf9QinsGlLtGX7PARcF79pyBb7SUEwJDwBB0bU=" alt="">
+                      </div>
+                      
+                  </a>
+              </div>
+          </div>
+          <div class="w-full px-4 sm:w-1/3 ">
+              <div class="mb-8 ">
+                  <a href="#">
+                      <div class="relative mb-5 overflow-hidden">
+                          <img class="object-cover w-full h-[250px] lg:h-[450px] transition duration-500  group-hover:origin-center hover:scale-105"
+                              src="https://media.istockphoto.com/id/1196172395/photo/in-the-photo-studio-with-professional-equipment-portrait-of-the-famous-photographer-holding.webp?b=1&s=170667a&w=0&k=20&c=bm7w_5qHmQwOc6VdBR967XBrHDMSVfD7qbEhhFoIR9w=" alt="">
+                      </div>
+                      
+                  </a>
+              </div>
+              <div class="mb-8 ">
+                  <a href="#">
+                      <div class="relative mb-5 overflow-hidden">
+                          <img class="object-cover w-full h-[250px] transition duration-500  group-hover:origin-center hover:scale-105"
+                              src="https://media.istockphoto.com/id/2008322840/photo/videographer-holding-camera.webp?b=1&s=170667a&w=0&k=20&c=frRKNOCOMuOb9YQaHpFt28rTeO4a7sDfXLEvck_U-zY=" alt="">
+                      </div>
+                      
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<!-- Mett Up Our Team  -->
+<section class="py-6 dark:bg-[var(--btn-bg-color)] dark:text-gray-100">
+	<div class="container flex flex-col items-center justify-center p-4 mx-auto space-y-8 sm:p-10">
+		<h1 class="text-4xl font-bold font-serif leadi text-center sm:text-5xl" >Our Team</h1>
+		<p class="max-w-2xl text-center  font-serif dark:text-gray-900">At a assumenda quas cum earum ut itaque commodi saepe rem aspernatur quam natus quis nihil quod, hic explicabo doloribus magnam neque, exercitationem eius sunt!</p>
+
+		<div class="flex flex-row flex-wrap-reverse justify-center"  data-aos="fade-up" data-aos-delay="100" data-aos-duration="900" >
+			<div class="flex flex-col justify-center m-8 text-center">
+				<img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500 " src="https://source.unsplash.com/100x100/?portrait?0">
+				<p class="text-xl font-semibold leadi">DharamChand Patle </p>
+				<p class="dark:text-gray-800  font-serif">Web Designer</p>
+			</div>
+
+			<div class="flex flex-col justify-center m-8 text-center"  data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" >
+				<img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src="https://source.unsplash.com/100x100/?portrait?1">
+				<p class="text-xl font-semibold  font-serif  leadi">Sanjay Sende </p>
+				<p class="dark:text-gray-800  font-serif">Visual Designer</p>
+			</div>
+
+			<div class="flex flex-col justify-center m-8 text-center"  data-aos="fade-up" data-aos-delay="100" data-aos-duration="1100" >
+				<img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src="https://source.unsplash.com/100x100/?portrait?2">
+				<p class="text-xl font-semibold   font-serif leadi">Shubham Uprade</p>
+				<p class="dark:text-gray-800  font-serif">Visual Designer</p>
+			</div>
+
+			<div class="flex flex-col justify-center m-8 text-center"  data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200" >
+				<img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src="https://source.unsplash.com/100x100/?portrait?3">
+				<p class="text-xl font-semibold  font-serif  leadi">Chandrabhann gadeswar </p>
+				<p class="dark:text-gray-800  font-serif">Visual Designer</p>
+			</div>
+
+      <div class="flex flex-col justify-center m-8 text-center"  data-aos="fade-up" data-aos-delay="100" data-aos-duration="1300" >
+				<img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src="https://source.unsplash.com/100x100/?portrait?3">
+				<p class="text-xl font-semibold  font-serif  leadi">Nikhil Waghade  </p>
+				<p class="dark:text-gray-800  font-serif">Visual Designer</p>
+			</div>
+			
+		</div>
+	</div>
+</section>
+<!-- Slider Section  -->
+
+<div class="relative w-full flex gap-4 py-6 overflow-x-auto">
+	<img class="h-48 aspect-video rounded-sm object-cover object-center bg-gray-500  transition duration-500  group-hover:origin-center hover:scale-105" src="https://media.istockphoto.com/id/480729251/photo/video-recording.jpg?s=612x612&w=0&k=20&c=8bGMe6k6JWoBMWJfU00D9yaS3l0q6p2L9uw_x8Rh6EQ=" alt="Image 1">
+	<img class="h-48 aspect-video rounded-sm object-cover object-center bg-gray-500  transition duration-500  group-hover:origin-center hover:scale-105" src="https://media.istockphoto.com/id/1318576429/photo/stream-at-a-concert-in-a-hall-without-spectators.jpg?s=612x612&w=0&k=20&c=92hl4XVh8KHagZ_FfYyoHdbdZZ1-RSpqMnEQpJLjZ0E=" alt="Image 2">
+	<img class="h-48 aspect-video rounded-sm object-cover object-center bg-gray-500  transition duration-500  group-hover:origin-center hover:scale-105" src="https://media.istockphoto.com/id/1339991214/photo/stream-at-a-concert-in-a-hall-without-spectators.jpg?s=612x612&w=0&k=20&c=Hh2gxzUXx-V_ITybxzumj56DS2V-8a3ZvLwB_M0k_eE=" alt="Image 3">
+	<img class="h-48 aspect-video rounded-sm object-cover object-center bg-gray-500  transition duration-500  group-hover:origin-center hover:scale-105" src="https://media.istockphoto.com/id/1190671525/photo/man-doing-live-video-with-phone-with-stabilizer-in-ny.jpg?s=612x612&w=0&k=20&c=WZE1j2UlhrrPiIoU04Q-LJs4H6YbMhM5YAgxk5yu2BU=" alt="Image 4">
+	<img class="h-48 aspect-video rounded-sm object-cover object-center bg-gray-500  transition duration-500  group-hover:origin-center hover:scale-105" src="https://media.istockphoto.com/id/179474676/photo/camera-operatrors-in-blurred-motion.jpg?s=612x612&w=0&k=20&c=Pd1wN1XSJIO9V4avxOAYpBoP2vAuF0rP0_hAqKjYINY=" alt="Image 5">
+	<img class="h-48 aspect-video rounded-sm object-cover object-center bg-gray-500  transition duration-500  group-hover:origin-center hover:scale-105" src="https://media.istockphoto.com/id/1248972919/photo/camera-lights-action.jpg?s=612x612&w=0&k=20&c=wDVSqabMiQ1LVs_DA0tlfSMTK8r_qGJYu_rqq_-VK5w=" alt="Image 5">
+	<img class="h-48 aspect-video rounded-sm object-cover object-center bg-gray-500  transition duration-500  group-hover:origin-center hover:scale-105" src="https://media.istockphoto.com/id/179474676/photo/camera-operatrors-in-blurred-motion.jpg?s=612x612&w=0&k=20&c=Pd1wN1XSJIO9V4avxOAYpBoP2vAuF0rP0_hAqKjYINY=" alt="Image 5">
+</div>
+
+<!-- Rewiew  Section  -->
+
+<div class="bg-white py-6 sm:py-8 lg:py-12">
+  <div class="mx-auto max-w-screen-xl px-4 md:px-8">
+    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-12">
+      <!-- overview - start -->
+      <div>
+        <div class="rounded-lg border p-4">
+          <h2 class="mb-3 text-lg font-bold text-gray-800 lg:text-xl">Customer Reviews</h2>
+
+          <div class="mb-0.5 flex items-center gap-2">
+            <!-- stars - start -->
+            <div class="-ml-1 flex gap-0.5">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-300" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+            </div>
+            <!-- stars - end -->
+
+            <span class="text-sm font-semibold">4/5</span>
+          </div>
+
+          <span class="block text-sm text-gray-500">Bases on 27 reviews</span>
+
+          <div class="my-5 flex flex-col gap-2 border-t border-b py-5">
+            <!-- star - start -->
+            <div class="flex items-center gap-3">
+              <span class="w-10 whitespace-nowrap text-right text-sm text-gray-600">5 Star</span>
+
+              <div class="flex h-4 flex-1 overflow-hidden rounded bg-gray-200">
+                <span class="h-full w-3/4 rounded bg-yellow-400"></span>
+              </div>
+            </div>
+            <!-- star - end -->
+
+            <!-- star - start -->
+            <div class="flex items-center gap-3">
+              <span class="w-10 whitespace-nowrap text-right text-sm text-gray-600">4 Star</span>
+
+              <div class="flex h-4 flex-1 overflow-hidden rounded bg-gray-200">
+                <span class="h-full w-1/2 rounded bg-yellow-400"></span>
+              </div>
+            </div>
+            <!-- star - end -->
+
+            <!-- star - start -->
+            <div class="flex items-center gap-3">
+              <span class="w-10 whitespace-nowrap text-right text-sm text-gray-600">3 Star</span>
+
+              <div class="flex h-4 flex-1 overflow-hidden rounded bg-gray-200">
+                <span class="h-full w-1/6 rounded bg-yellow-400"></span>
+              </div>
+            </div>
+            <!-- star - end -->
+
+            <!-- star - start -->
+            <div class="flex items-center gap-3">
+              <span class="w-10 whitespace-nowrap text-right text-sm text-gray-600">2 Star</span>
+
+              <div class="flex h-4 flex-1 overflow-hidden rounded bg-gray-200">
+                <span class="h-full w-1/4 rounded bg-yellow-400"></span>
+              </div>
+            </div>
+            <!-- star - end -->
+
+            <!-- star - start -->
+            <div class="flex items-center gap-3">
+              <span class="w-10 whitespace-nowrap text-right text-sm text-gray-600">1 Star</span>
+
+              <div class="flex h-4 flex-1 overflow-hidden rounded bg-gray-200">
+                <span class="h-full w-1/12 rounded bg-yellow-400"></span>
+              </div>
+            </div>
+            <!-- star - end -->
+          </div>
+
+          <a href="#" class="block rounded-lg border bg-white px-4 py-2 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:px-8 md:py-3 md:text-base">Write a review</a>
+        </div>
+      </div>
+      <!-- overview - end -->
+
+      <!-- reviews - start -->
+      <div class="lg:col-span-2">
+        <div class="border-b pb-4 md:pb-6">
+          <h2 class="text-lg font-bold text-gray-800 lg:text-xl">Top Reviews</h2>
+        </div>
+
+        <div class="divide-y"  data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" >
+          <!-- review - start -->
+          <div class="flex flex-col gap-3 py-4 md:py-8">
+            <div>
+              <span class="block text-sm font-bold">John McCulling</span>
+              <span class="block text-sm text-gray-500">August 28, 2021</span>
+            </div>
+
+            <!-- stars - start -->
+            <div class="-ml-1 flex gap-0.5">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+            </div>
+            <!-- stars - end -->
+
+            <p class="text-gray-600">This is a section of some simple filler text, also known as placeholder text. It shares some characteristics of a real written text but is random or otherwise generated. It may be used to display a sample of fonts or generate text for testing.</p>
+          </div>
+          <!-- review - end -->
+
+          <!-- review - start -->
+          <div class="flex flex-col gap-3 py-4 md:py-8"  data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200" >
+            <div>
+              <span class="block text-sm font-bold">Kate Berg</span>
+              <span class="block text-sm text-gray-500">July 21, 2021</span>
+            </div>
+
+            <!-- stars - start -->
+            <div class="-ml-1 flex gap-0.5">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+            </div>
+            <!-- stars - end -->
+
+            <p class="text-gray-600">This is a section of some simple filler text, also known as placeholder text. It shares some characteristics of a real written text but is random or otherwise generated. It may be used to display a sample of fonts or generate text for testing.</p>
+          </div>
+          <!-- review - end -->
+
+          <!-- review - start -->
+          <div class="flex flex-col gap-3 py-4 md:py-8"  data-aos="fade-up" data-aos-delay="100" data-aos-duration="1500" >
+            <div>
+              <span class="block text-sm font-bold">Greg Jackson</span>
+              <span class="block text-sm text-gray-500">March 16, 2021</span>
+            </div>
+
+            <!-- stars - start -->
+            <div class="-ml-1 flex gap-0.5">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-300" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-300" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+            </div>
+            <!-- stars - end -->
+
+            <p class="text-gray-600">This is a section of some simple filler text, also known as placeholder text. It shares some characteristics of a real written text but is random or otherwise generated. It may be used to display a sample of fonts or generate text for testing.</p>
+          </div>
+          <!-- review - end -->
+        </div>
+
+        <div class="border-t pt-6">
+          <a href="#" class="flex items-center gap-0.5 font-semibold text-indigo-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Read all reviews</a>
+        </div>
+      </div>
+      <!-- reviews - end -->
+    </div>
+  </div>
+</div>
+
+<!-- Contact Section  -->
+
+<section class="py-16 dark:bg-[var(--btn-bg-color)] dark:text-gray-50">
+	<div class="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
+		<div class="py-6 md:py-0 md:px-6">
+			<h1 class="text-4xl font-bold font-serif text-[var(--black-color)]">Get in touch</h1>
+			<p class="pt-2 pb-4">Fill in the form to start a conversation</p>
+			<div class="space-y-4">
+				<p class="flex items-center">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 mr-2 sm:mr-6 text-[var(--black-color)]">
+						<path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+					</svg>
+					<span>Madhya Pradesh , India </span>
+				</p>
+				<p class="flex items-center">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 mr-2 sm:mr-6 text-[var(--black-color)]">
+						<path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+					</svg>
+					<span>+91 6263827162</span>
+				</p>
+				<p class="flex items-center">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 mr-2 sm:mr-6 text-[var(--black-color)]">
+						<path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+						<path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+					</svg>
+					<span>dharamchandpatle917@gmail.com</span>
+				</p>
+			</div>
+		</div>
+		<form novalidate="" class="flex flex-col py-6 space-y-6 md:py-0 md:px-6" >
+			<label class="block">
+				<span class="mb-1">Full name</span>
+				<input type="text" placeholder="Leroy Jenkins" class="block w-full rounded-md shadow-sm focus:ring focus:ri border-2 border-[var(--black-color)] focus:ri dark:bg-[var(--btn-bg-color)]">
+			</label>
+			<label class="block">
+				<span class="mb-1">Email address</span>
+				<input type="email" placeholder="leroy@jenkins.com" class="block w-full rounded-md shadow-sm focus:ring focus:ri border-2 border-[var(--black-color)] focus:ri dark:bg-[var(--btn-bg-color)]">
+			</label>
+			<label class="block">
+				<span class="mb-1">Message</span>
+				<textarea rows="3" class="block w-full rounded-md focus:ring focus:ri border-2 border-[var(--black-color)] focus:ri dark:bg-[var(--btn-bg-color)]"></textarea>
+			</label>
+			<button type="button" class="self-center px-5 py-2 text-lg rounded focus:ring hover:ring focus:ri dark:bg-[var(--btn-bg-color)] border-b-2 font-serif dark:text-gray-900 focus:ri hover:ri">Submit</button>
+		</form>
+	</div>
+</section>
+
+<!-- Footer Section  -->
+
+<div class="bg-gray-900">
+  <footer class="mx-auto max-w-screen-2xl px-4 md:px-8">
+    <div class="mb-16 grid grid-cols-2 gap-12 pt-10 md:grid-cols-4 lg:grid-cols-6 lg:gap-8 lg:pt-12">
+      <div class="col-span-full lg:col-span-2">
+        <!-- logo - start -->
+        <div class="mb-4 lg:-mt-2">
+          <a href="/" class="inline-flex items-center gap-2 text-xl font-bold text-gray-100 md:text-2xl" aria-label="logo">
+          <img src="https://max-themes.net/demos/ztudiox/main/ztudiox/upload/logo-1.png" alt="">
+          </a>
+        </div>
+        <!-- logo - end -->
+
+        <p class="mb-6 text-gray-400 sm:pr-8">Filler text is dummy text which has no meaning however looks very similar to real text.</p>
+
+        <!-- social - start -->
+        <div class="flex gap-4">
+          <a href="#" target="_blank" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+            <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+            </svg>
+          </a>
+
+          <a href="#" target="_blank" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+            <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+            </svg>
+          </a>
+
+          <a href="#" target="_blank" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+            <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+            </svg>
+          </a>
+
+          <a href="#" target="_blank" class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+            <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
+          </a>
+        </div>
+        <!-- social - end -->
+      </div>
+
+      <!-- nav - start -->
+      <div>
+        <div class="mb-4 font-bold uppercase tracking-widest text-gray-100">Products</div>
+
+        <nav class="flex flex-col gap-4">
+          <div>
+            <a href="#" class="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Overview</a>
+          </div>
+
+          <div>
+            <a href="#" class="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Solutions</a>
+          </div>
+
+          <div>
+            <a href="#" class="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Pricing</a>
+          </div>
+
+          <div>
+            <a href="#" class="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Customers</a>
+          </div>
+        </nav>
+      </div>
+      <!-- nav - end -->
+
+      <!-- nav - start -->
+      <div>
+        <div class="mb-4 font-bold uppercase tracking-widest text-gray-100">Company</div>
+
+        <nav class="flex flex-col gap-4">
+          <div>
+            <a href="#" class="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600">About</a>
+          </div>
+
+          <div>
+            <a href="#" class="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Investor Relations</a>
+          </div>
+
+          <div>
+            <a href="#" class="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Jobs</a>
+          </div>
+
+          <div>
+            <a href="#" class="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Press</a>
+          </div>
+
+          <div>
+            <a href="#" class="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Blog</a>
+          </div>
+        </nav>
+      </div>
+      <!-- nav - end -->
+
+      <!-- nav - start -->
+      <div>
+        <div class="mb-4 font-bold uppercase tracking-widest text-gray-100">Support</div>
+
+        <nav class="flex flex-col gap-4">
+          <div>
+            <a href="#" class="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Contact</a>
+          </div>
+
+          <div>
+            <a href="#" class="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Documentation</a>
+          </div>
+
+          <div>
+            <a href="#" class="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Chat</a>
+          </div>
+
+          <div>
+            <a href="#" class="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600">FAQ</a>
+          </div>
+        </nav>
+      </div>
+      <!-- nav - end -->
+
+      <!-- nav - start -->
+      <div>
+        <div class="mb-4 font-bold uppercase tracking-widest text-gray-100">Legal</div>
+
+        <nav class="flex flex-col gap-4">
+          <div>
+            <a href="#" class="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Terms of Service</a>
+          </div>
+
+          <div>
+            <a href="#" class="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Privacy Policy</a>
+          </div>
+
+          <div>
+            <a href="#" class="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Cookie settings</a>
+          </div>
+        </nav>
+      </div>
+      <!-- nav - end -->
+    </div>
+
+    <div class="border-t border-gray-800 py-8 text-center text-sm text-gray-400">© 2021 - Present Flowrift. All rights reserved.</div>
+  </footer>
+</div>
+
+<script
+defer
+src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+></script>
+
+<!-- Animation Script  -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 120,
+    duration: 1000,
+  });
+</script>
+</body>
+</html>

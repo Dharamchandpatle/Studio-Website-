@@ -1,0 +1,41 @@
+:root{
+    --font-color:#ffffff;
+    --btn-bg-color:#f6c600;
+    --black-color:#000;
+    --para-color:#6b6b6b;
+}
+.section-3 {
+    background-image: url(https://media.istockphoto.com/id/1471418949/photo/two-people-in-neon-color-indoors-person-shooting-with-purple-light-on-professional-camera.jpg?s=612x612&w=0&k=20&c=71xqC4D486siLDs-Y_9Mb_Nf1Ap7MwJ3Es1mYT_tdaI=);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    object-fit: contain;
+    background-color: rgba(135, 149, 150, 0.025);
+    z-index: 1;
+
+}
+
+.section-4 {
+    background-image: url(https://i.redd.it/some-photos-i-made-that-im-pretty-proud-of-im-surprised-by-v0-51bn4wbqma3c1.jpg?width=3840&format=pjpg&auto=webp&s=cbff97f0025fbe0627d1951b4dbd1dc48d2ddff4);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    object-fit: contain;
+    background-color: rgba(135, 149, 150, 0.025);
+    z-index: 1;
+
+}
+
+
+.section-5 {
+    background-image: url(https://img.freepik.com/premium-photo/flat-lay-ice-cream-cone-with-pink-rose-yellow-copy-space_28806-675.jpg);
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+    background-size: cover;
+    object-fit: contain;
+    background-color: rgba(135, 149, 150, 0.025);
+    /* position: absolute; */
+    z-index: 1;
+
+}
